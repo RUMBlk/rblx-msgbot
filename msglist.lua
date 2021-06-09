@@ -1,7 +1,7 @@
-msgversion = "1509062021"
+msgversion = "15962021"
 msg = 
 {
-    "Go to #funkyquotes to add your quotes and vote for others. Version of quotes: " .. msgversion,
+    "Go to #funkyquotes to add your quotes and vote for others",
     "funky!",
     "Join \"funky!\" DS too! Search -> #funkyfumo in twitter for link!",
     "Stay Funky!",
@@ -16,4 +16,4 @@ msg =
     "Funky is Eternal, not funky is not",
     "Enlist to the Funky! Patrol today and serve your country"
 }
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*Quotes loaded/updated succesfully*", "All");
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*Quotes loaded/updated succesfully. Version of quotes: \"" .. msgversion .. "\"", "All");
