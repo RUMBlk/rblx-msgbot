@@ -1,4 +1,4 @@
-msgversion = "15962021"
+msgversion = "1.0"
 msg = 
 {
     "Go to #funkyquotes to add your quotes and vote for others",
@@ -14,6 +14,7 @@ msg =
     "Funky is Eternal",
     "This messages were sended by a bot, my executor could be now afk",
     "Funky is Eternal, not funky is not",
-    "Enlist to the Funky! Patrol today and serve your country"
+    "Enlist to the \"Funky! Patrol\" today and serve your country",
+    "Funky together strong"
 }
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*Quotes loaded/updated succesfully. Version of quotes: \"" .. msgversion .. "\"", "All");
