@@ -1,3 +1,4 @@
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgversion, "All")
 msgversion = "1.1B"
 msg = 
 {
@@ -19,11 +20,7 @@ msg =
     "You save the funky, you save the world"
 }
 test = true
-msg =
-{
-    "TEST MODE",
-    "Versions comparison: " .. msgcheck .. " " .. msgversion
-}
 if test == true then msgupdate = "Succesfully compiled" skip = false
 else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
-if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") wait(speed) end
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All")
+wait(speed)
