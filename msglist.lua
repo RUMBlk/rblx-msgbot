@@ -1,8 +1,8 @@
-msgversion = "1.0"
+msgversion = "1.1"
 if(msgcheck == msgversion) then skip = true end
 msg = 
 {
-    "Go to #funkyquotes to add your quotes and vote for others",
+    "Go to #funkyquotes to add your quotes and vote for others. Script was made by RUMBlk",
     "funky!",
     "Join \"funky!\" DS too! Search -> #funkyfumo in twitter for link!",
     "Stay Funky!",
@@ -15,7 +15,9 @@ msg =
     "This messages was sended by a bot, my executor could be now afk",
     "Funky is Eternal, not funky is not",
     "Enlist to the \"Funky! Patrol\" today and serve your country",
-    "Funky together strong"
+    "Funky together strong",
+    "100% pure, concentrated funky",
+    "You save the funky, you save the world"
 }
 test = false
 if test == true then msgupdate = "Succesfully compiled" skip = false
