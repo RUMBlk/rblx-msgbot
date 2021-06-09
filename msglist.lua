@@ -1,5 +1,6 @@
 msgversion = "1.1B"
 if(msgcheck == msgversion) then skip = true else skip = false end
+if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgversion, "All") wait(speed) end
 msg = 
 {
     "Go to #funkyquotes to add your quotes and vote for others. Script was made by RUMBlk",
@@ -20,6 +21,8 @@ msg =
     "You save the funky, you save the world"
 }
 test = false
+msgdev = true
 if test == true then msgupdate = "Succesfully compiled" skip = false
-else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
+--else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
+else msgupdate = "*Version check: " .. msgcheck  .. " " .. msgversion .. "\"" end
 if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") wait(speed) end
