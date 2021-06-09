@@ -4,7 +4,7 @@ msg =
 {
     "Go to #funkyquotes to add your quotes and vote for others. Script was made by RUMBlk",
     "funky!",
-    "Join \"funky!\" DS too! Search -> #funkyfumo in twitter for link!",
+    --[["Join \"funky!\" DS too! Search -> #funkyfumo in twitter for link!",
     "Stay Funky!",
     "The funky tree rises once again!",
     "We do a bit of funkying",
@@ -17,7 +17,7 @@ msg =
     "Enlist to the \"Funky! Patrol\" today and serve your country",
     "Funky together strong",
     "100% pure, concentrated funky",
-    "You save the funky, you save the world"
+    "You save the funky, you save the world"]]
 }
 test = true
 if test == true then msgupdate = "Succesfully compiled" skip = false
