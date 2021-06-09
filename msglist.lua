@@ -18,12 +18,11 @@ msg =
     "Funky together strong",
     "100% pure, concentrated funky",
     "You save the funky, you save the world",
-    "FumoCam is funky, check BecomeFumoCam on twitch too!"
+    "FumoCam is funky, please check BecomeFumoCam on twitch!"
 }
 test = false
 skip = false
 if test == true then msgupdate = "Succesfully compiled"
 elseif msgcheck == msgversion then skip = true
 else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
-if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") end
-wait(speed)
+if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") wait(speed) end
