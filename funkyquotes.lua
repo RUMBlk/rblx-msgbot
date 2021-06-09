@@ -11,4 +11,6 @@ repeat
         wait(speed)
     end
     loadstring(game:HttpGet('https://raw.githubusercontent.com/RUMBlk/funkyquotes/main/msglist.lua'))() --update msglist
+    items=#(msg)
+    wait(speed)
 until enabled == false
