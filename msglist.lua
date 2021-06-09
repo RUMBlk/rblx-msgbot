@@ -1,5 +1,5 @@
-msgversion = "1.1"
-if(msgcheck == msgversion) then skip = true end
+msgversion = "1.1A"
+if(msgcheck == msgversion) then skip = true else skip = false end
 msg = 
 {
     "Go to #funkyquotes to add your quotes and vote for others. Script was made by RUMBlk",
