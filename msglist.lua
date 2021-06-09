@@ -20,9 +20,12 @@ msg =
     "100% pure, concentrated funky",
     "You save the funky, you save the world"
 }
-test = false
-msgdev = true
+test = true
+msg =
+{
+    "--TEST MODE--",
+    "Versions comparison: " .. msgcheck .. " " .. msgversion
+}
 if test == true then msgupdate = "Succesfully compiled" skip = false
---else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
-else msgupdate = "*Version check: " .. msgcheck  .. " " .. msgversion .. "\"" end
+else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
 if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") wait(speed) end
