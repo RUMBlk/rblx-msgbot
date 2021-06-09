@@ -1,15 +1,8 @@
-enabled = true
-msg = 
-{
-    "Go to #funkyquotes to add your quotes and vote for others",
-    "funky!",
-    "Join \"funky!\" DS too! Search -> #funkyfumo in twitter for link!",
-    "Stay Funky!",
-    "The funky tree rises once again!",
-    "We do a bit of funkying",
-    "What a beautiful F U N K Y!"
-}
+enabled = true --for loop
 speed = 30 --in seconds
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/RUMBlk/funkyquotes/main/msglist.lua'))() --load msglist
+
 items=#(msg)
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*Turned on*", "All")
 repeat
