@@ -1,4 +1,5 @@
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgversion, "All")
+msgcheck = msgversion
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgcheck, "All")
 msgversion = "1.1B"
 msg = 
 {
