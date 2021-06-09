@@ -1,8 +1,8 @@
 msgcheck = msgversion
-msgversion = "1.2"
+msgversion = "1.2D"
 msg = 
 {
-    "Go to #funkyquotes to add your quotes and vote for others. Script was made by RUMBlk",
+    "Go to #funkyquotes in our DS server to add your quotes and vote for others. Script was made by RUMBlk",
     "funky!",
     "Join \"funky!\" DS too! Search -> #funkyfumo in twitter for link!",
     "Stay Funky!",
