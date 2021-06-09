@@ -10,4 +10,5 @@ repeat
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg[i], "All")
         wait(speed)
     end
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RUMBlk/funkyquotes/main/msglist.lua'))() --update msglist
 until enabled == false
