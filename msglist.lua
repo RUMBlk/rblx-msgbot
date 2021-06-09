@@ -1,5 +1,4 @@
 msgversion = "1.1B"
-if(msgcheck == msgversion) then skip = true else skip = false end
 if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgversion, "All") wait(speed) end
 msg = 
 {
@@ -23,7 +22,7 @@ msg =
 test = true
 msg =
 {
-    "--TEST MODE--",
+    "TEST MODE",
     "Versions comparison: " .. msgcheck .. " " .. msgversion
 }
 if test == true then msgupdate = "Succesfully compiled" skip = false
