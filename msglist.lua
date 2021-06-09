@@ -18,7 +18,7 @@ msg =
     "Funky together strong",
     "100% pure, concentrated funky",
     "You save the funky, you save the world",
-    "FumoCam is funky, please check BecomeFumoCam on twitch!"
+    "FumoCam is funky, check BecomeFumoCam on twitch too!"
 }
 test = false
 skip = false
