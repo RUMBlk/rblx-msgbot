@@ -11,10 +11,12 @@ msg =
     "All you have to do is being funky!",
     "reject humanity, become funky",
     "What a funky!",
-    "Funky is Eternal",
-    "This messages were sended by a bot, my executor could be now afk",
+    "This messages was sended by a bot, my executor could be now afk",
     "Funky is Eternal, not funky is not",
     "Enlist to the \"Funky! Patrol\" today and serve your country",
     "Funky together strong"
 }
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*Quotes loaded/updated succesfully. Version of quotes: \"" .. msgversion .. "\"", "All");
+test = true
+if test == true then msgupdate = "Succesfully compiled"
+else msgupdate = "*Quotes loaded/updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All");
