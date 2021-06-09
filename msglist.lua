@@ -17,7 +17,7 @@ msg =
     "Enlist to the \"Funky! Patrol\" today and serve your country",
     "Funky together strong"
 }
-test = true
+test = false
 if test == true then msgupdate = "Succesfully compiled" skip = false
 else msgupdate = "*Quotes loaded/updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
 if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") end
