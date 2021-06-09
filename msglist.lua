@@ -1,5 +1,4 @@
 msgversion = "1.1B"
-if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgversion, "All") wait(speed) end
 msg = 
 {
     "Go to #funkyquotes to add your quotes and vote for others. Script was made by RUMBlk",
