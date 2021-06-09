@@ -21,7 +21,9 @@ msg =
     "You save the funky, you save the world"]]
 }
 test = true
-if test == true then msgupdate = "Succesfully compiled" skip = false
+skip = false
+if test == true then msgupdate = "Succesfully compiled"
+elseif msgcheck == msgversion then skip = true
 else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All")
+if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") end
 wait(speed)
