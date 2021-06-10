@@ -18,12 +18,7 @@ msg =
     "Funky together strong",
     "100% pure, concentrated funky",
     "You save the funky, you save the world",
-    "FumoCam is funky, don't forget to check BecomeFumoCam on twitch!",
-    "Touhou 6: Embodiment of a Funky Tree",
-    "Funky 2: Electic Boogalo",
-    "Touhou 7: Perfect Funky blossom",
-    "Touhou 15: Legacy of Funky Kingdom",
-    "Touhou 19: Eternal Funk"
+    "FumoCam is funky, don't forget to check BecomeFumoCam on twitch!"
 }
 test = false
 skip = false
