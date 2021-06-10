@@ -1,9 +1,12 @@
 msgversion = "1.3E"
-msg = 
+desc =
 {
     "Go to #funkyquotes in our DS server to add your quotes and vote for others. Script was made by RUMBlk",
+    "Join \"funky!\" DS too! Search -> #funkyfumo in twitter for link!"
+}
+msg = 
+{
     "funky!",
-    "Join \"funky!\" DS too! Search -> #funkyfumo in twitter for link!",
     "Stay Funky!",
     "The funky tree rises once again!",
     "We do a bit of funkying",
