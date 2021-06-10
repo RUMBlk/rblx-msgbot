@@ -1,9 +1,4 @@
 local msgversion = "1.3E"
-local lol =
-{
-    "Go to #funkyquotes in our DS server to add your quotes and vote for others. Script was made by RUMBlk",
-    "Join \"funky!\" DS too! Search -> #funkyfumo in twitter for link!"
-}
 local msg = 
 {
     "funky!",
