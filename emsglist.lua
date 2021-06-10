@@ -1,10 +1,10 @@
-msgversion = "1.3E"
-torepeat =
+local msgversion = "1.3E"
+local desc =
 {
     "Go to #funkyquotes in our DS server to add your quotes and vote for others. Script was made by RUMBlk",
     "Join \"funky!\" DS too! Search -> #funkyfumo in twitter for link!"
 }
-msg = 
+local msg = 
 {
     "funky!",
     "Stay Funky!",
@@ -27,8 +27,8 @@ msg =
     "Touhou 15: Legacy of Funky Kingdom",
     "Touhou 19: Eternal Funk"
 }
-test = false
-skip = false
+local test = false
+local skip = false
 if test == true then msgupdate = "Succesfully compiled"
 elseif msgcheck == nil then msgupdate = "*Quotes loaded succesfully. Version of quotes: \"" .. msgversion .. "\""
 elseif msgcheck == msgversion then skip = true
