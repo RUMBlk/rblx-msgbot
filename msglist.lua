@@ -1,9 +1,9 @@
-msgversion = "1.4"
+msgversion = "1.4.2"
 
 desc =
 {
     "Go to #funkyquotes in our DS server to add your quotes and vote for others. Script was made by RUMBlk",
-    "Join \"funky!\" DS too! Search -> #funkyfumo in twitter for link!",
+    "Join \"funky!\" DS today! Search -> #funkyfumo in twitter for link!",
 }
 msg = 
 {
@@ -16,7 +16,7 @@ msg =
     "Reject humanity, become funky",
     "What a funky!",
     "This messages was sended by a bot, my executor could be now afk",
-    "Funky is Eternal, not funky is not",
+    "Unfunky is temporary, Funky is eternal",
     "Enlist to the \"Funky! Patrol\" today and serve your country",
     "Funky together strong",
     "100% pure, concentrated funky",
@@ -27,9 +27,11 @@ msg =
     "Touhou 7: Perfect Funky blossom",
     "Touhou 15: Legacy of Funky Kingdom",
     "Touhou 19: Eternal Funk",
-    "Stay hydrated while being Funky!"
+    "Stay hydrated while being Funky!",
+    "Nipah, mukyu, awoo, whatever you are! Funky doesn't care who you are",
+    "May the funky be with you"
 }
-test = false
+test = true
 skip = false
 if test == true then msgupdate = "Succesfully compiled"
 elseif msgcheck == nil then msgupdate = "*Quotes loaded succesfully. Version of quotes: \"" .. msgversion .. "\""
