@@ -1,3 +1,4 @@
+msgcheck = msgversion
 msgversion = "1.3E - Experimental update"
 desc = 
 {
@@ -30,8 +31,6 @@ msg =
 test = false
 skip = false
 if test == true then msgupdate = "Succesfully compiled"
-elseif msgcheck then msgupdate = "*Quotes loaded succesfully. Version of quotes: \"" .. msgversion .. "\""
 elseif msgcheck == msgversion then skip = true
-else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
+else msgupdate = "*Quotes loaded/updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
 if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") end
-msgcheck = msgversion
