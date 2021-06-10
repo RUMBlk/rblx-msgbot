@@ -1,17 +1,29 @@
-enabled = true --for loop
-speed = 30 --in seconds
+local enabled = true --for loop
+local speed = 5 --in seconds
+local update = true --updates msglist after every iteration
+local random = true --randomize quotes
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*Turned on*", "All")
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/RUMBlk/funkyquotes/main/msglist.lua'))() --load msglist
 
-items=#(msg)
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*Turned on*", "All")
 repeat
+    items=#(msg)
+    if random == true then
+        math.randomseed(os.time())
+        items = math.fmod(items, 20)
+    end
+    if desc then
+        for i = 1, #(desc) do
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(desc[i], "All")
+        end
+    end
     for i = 1, items do
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg[i], "All")
+        
+        if random == true then tosend = msg[math.random(1, items)] else tosend = msg[i] end
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(tosend, "All")
         wait(speed)
     end
-    msgcheck=msgversion
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/RUMBlk/funkyquotes/main/msglist.lua'))() --update msglist
-    items=#(msg)
-    wait(speed)
+    if update == true then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/RUMBlk/funkyquotes/main/msglist.lua'))() end --update msglist
 until enabled == false
