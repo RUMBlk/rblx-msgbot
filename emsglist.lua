@@ -32,7 +32,6 @@ msg =
 test = false
 skip = false
 if test == true then msgupdate = "Succesfully compiled"
-elseif not msgcheck then msgupdate = "*Quotes loaded succesfully. Version of quotes: \"" .. msgversion .. "\""
 elseif msgcheck == msgversion then skip = true
 else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
 if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") end
