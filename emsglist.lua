@@ -1,14 +1,10 @@
 msgcheck = msgversion
-msgversion = "1.3E"
---[[desc = 
-{
-    "true",
-    "Go to #funkyquotes in our DS server to add your quotes and vote for others. Script was made by RUMBlk",
-    "Join \"funky!\" DS today! Search -> #funkyfumo in twitter for link!"
-}]]
+msgversion = "1.2D"
 msg = 
 {
+    "Go to #funkyquotes in our DS server to add your quotes and vote for others. Script was made by RUMBlk",
     "funky!",
+    "Join \"funky!\" DS too! Search -> #funkyfumo in twitter for link!",
     "Stay Funky!",
     "The funky tree rises once again!",
     "We do a bit of funkying",
@@ -22,16 +18,16 @@ msg =
     "Funky together strong",
     "100% pure, concentrated funky",
     "You save the funky, you save the world",
-    "FumoCam is funky, don't forget to check BecomeFumoCam on twitch!"
-    --[["Touhou 6: Embodiment of a Funky Tree",
+    "FumoCam is funky, don't forget to check BecomeFumoCam on twitch!",
+    "Touhou 6: Embodiment of a Funky Tree",
     "Funky 2: Electic Boogalo",
     "Touhou 7: Perfect Funky blossom",
     "Touhou 15: Legacy of Funky Kingdom",
-    "Touhou 19: Eternal Funk"]]
+    "Touhou 19: Eternal Funk"
 }
 test = false
 skip = false
 if test == true then msgupdate = "Succesfully compiled"
 elseif msgcheck == msgversion then skip = true
 else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
-if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") end
+if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") wait(speed) end
