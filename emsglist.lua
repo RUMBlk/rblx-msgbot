@@ -1,10 +1,10 @@
 msgversion = "1.3E - Experimental update"
-desc = 
+--[[desc = 
 {
     "true",
     "Go to #funkyquotes in our DS server to add your quotes and vote for others. Script was made by RUMBlk",
     "Join \"funky!\" DS today! Search -> #funkyfumo in twitter for link!"
-}
+}]]
 msg = 
 {
     "funky!",
