@@ -5,7 +5,7 @@ local random = true --randomize quotes
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*Turned on*", "All")
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/RUMBlk/funkyquotes/main/emsglist.lua'))() --load msglist
+loadstring(game:HttpGet('https://raw.githubusercontent.com/RUMBlk/funkyquotes/main/msglist.lua'))() --load msglist
 
 repeat
     items=#(msg)
