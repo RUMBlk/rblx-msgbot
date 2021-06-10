@@ -1,10 +1,9 @@
-msgcheck = msgversion
 msgversion = "1.3E - Experimental update"
-desc = 
+--[[desc = 
 {
     "Go to #funkyquotes in our DS server to add your quotes and vote for others. Script was made by RUMBlk",
     "Join \"funky!\" DS today! Search -> #funkyfumo in twitter for link!"
-}
+}]]
 msg = 
 {
     "funky!",
@@ -31,6 +30,8 @@ msg =
 test = false
 skip = false
 if test == true then msgupdate = "Succesfully compiled"
+elseif not msgcheck then msgupdate = "*Quotes loaded succesfully. Version of quotes: \"" .. msgversion .. "\""
 elseif msgcheck == msgversion then skip = true
-else msgupdate = "*Quotes loaded/updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
+else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
 if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") end
+msgcheck = msgversion
