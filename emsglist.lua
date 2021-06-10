@@ -29,7 +29,7 @@ msg =
     "Touhou 15: Legacy of Funky Kingdom",
     "Touhou 19: Eternal Funk"
 }
-test = true
+test = false
 skip = false
 if test == true then msgupdate = "Succesfully compiled"
 elseif msgcheck == msgversion then skip = true
