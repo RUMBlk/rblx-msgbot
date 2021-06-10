@@ -31,7 +31,7 @@ msg =
     "Nipah, mukyu, awoo, whatever you are! Funky doesn't care who you are",
     "May the funky be with you"
 }
-test = true
+test = false
 skip = false
 if test == true then msgupdate = "Succesfully compiled"
 elseif msgcheck == nil then msgupdate = "*Quotes loaded succesfully. Version of quotes: \"" .. msgversion .. "\""
