@@ -1,11 +1,11 @@
 local enabled = true --for loop
-local speed = 5 --in seconds
+local speed = 30 --in seconds
 local update = true --updates msglist after every iteration
 local random = true --randomize quotes
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*Turned on*", "All")
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/RUMBlk/funkyquotes/main/msglist.lua'))() --load msglist
+loadstring(game:HttpGet('https://raw.githubusercontent.com/RUMBlk/funkyquotes/main/emsglist.lua'))() --load msglist
 
 repeat
     items=#(msg)
@@ -16,6 +16,7 @@ repeat
     if desc then
         for i = 1, #(desc) do
             game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(desc[i], "All")
+            wait(speed)
         end
     end
     for i = 1, items do
@@ -24,6 +25,5 @@ repeat
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(tosend, "All")
         wait(speed)
     end
-    if update == true then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/RUMBlk/funkyquotes/main/msglist.lua'))() end --update msglist
+    if update == true then loadstring(game:HttpGet('https://raw.githubusercontent.com/RUMBlk/funkyquotes/main/msglist.lua'))() end --load msglist end
 until enabled == false
