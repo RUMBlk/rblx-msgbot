@@ -7,16 +7,16 @@ if not update then update = true end --updates msglist after every iteration
 if not random then random = true end --randomize quotes
 if not msglist then update = false end
 
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*MsgBot: Executed and turned on*", "All")
-
-desc = {
+if not desc then desc = {
     "Script was made by RUMBlk",
     "Search on github \"rblx-msgbot\" for script"
-}
-msg = {
+} end
+if not msg then msg = {
     "Put your messages here",
     "Placeholder"
-}
+} end
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*MsgBot: Executed and turned on*", "All")
 
 function msgload()
     loadstring(game:HttpGet(msglist))() end
@@ -39,7 +39,7 @@ game:GetService("Players").LocalPlayer.Chatted:Connect(function(chatmsg)
     end
 end)
 
-if update == true then msgload() end
+if msglist then msgload() end
 
 repeat
     if enabled == true then repeat
