@@ -1,4 +1,4 @@
-msgversion = "1.4.2A"
+msgversion = "2.0"
 
 desc =
 {
@@ -24,12 +24,18 @@ msg =
     "FumoCam is funky, don't forget to check \"Funky!\" history on BecomeFumoCam twitch!",
     "Touhou 6: Embodiment of a Funky Tree",
     "Funky 2: Electic Boogalo",
-    "Touhou 7: Perfect Funky blossom",
+    "Touhou 7: Perfect Funky Blossom",
     "Touhou 15: Legacy of Funky Kingdom",
     "Touhou 19: Eternal Funk",
     "Stay hydrated while being Funky!",
     "Nipah, mukyu, awoo, whatever you are! Funky doesn't care who you are",
-    "May the funky be with you"
+    "May the funky be with you",
+    "Stay Funky, but don't end up like Junko",
+    "Nobody knows the reason of Junko's death, all that we know is that she was funky",
+    "\"roomia gaming\" - favourite sentence of Funky Rumia",
+    "Funk fo da (er)foo doe",
+    "If anyone had found players by the names of \"not_food\" or \"Melissandria666\", please tell them to come back to the tree (now a treehouse).",
+    "Where were you when DangerCirno was stairs?"
 }
 test = false
 skip = false
