@@ -1,4 +1,4 @@
-msgversion = "1.4.2"
+msgversion = "1.4.2A"
 
 desc =
 {
@@ -21,7 +21,7 @@ msg =
     "Funky together strong",
     "100% pure, concentrated funky",
     "You save the funky, you save the world",
-    "FumoCam is funky, don't forget to check BecomeFumoCam on twitch!",
+    "FumoCam is funky, don't forget to check \"Funky!\" history on BecomeFumoCam twitch!",
     "Touhou 6: Embodiment of a Funky Tree",
     "Funky 2: Electic Boogalo",
     "Touhou 7: Perfect Funky blossom",
@@ -37,5 +37,6 @@ if test == true then msgupdate = "Succesfully compiled"
 elseif msgcheck == nil then msgupdate = "*Quotes loaded succesfully. Version of quotes: \"" .. msgversion .. "\""
 elseif msgcheck == msgversion then skip = true
 else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
+if forceupdate == true then msgupdate = "Quotes already up-to-date. Version of quotes: \"" .. msgversion .. "\"" skip = false end
 if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") wait(speed) end
 msgcheck = msgversion
