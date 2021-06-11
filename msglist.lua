@@ -43,6 +43,6 @@ if test == true then msgupdate = "Succesfully compiled"
 elseif msgcheck == nil then msgupdate = "*Quotes loaded succesfully. Version of quotes: \"" .. msgversion .. "\""
 elseif msgcheck == msgversion then skip = true
 else msgupdate = "*Quotes updated succesfully. Version of quotes: \"" .. msgversion .. "\"" end
-if forceupdate == true then msgupdate = "Quotes already up-to-date. Version of quotes: \"" .. msgversion .. "\"" skip = false forceupdate = false end
+if forceupdate == true and skip == true then msgupdate = "Quotes already up-to-date. Version of quotes: \"" .. msgversion .. "\"" skip = false forceupdate = false end
 if skip == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msgupdate, "All") wait(speed) end
 msgcheck = msgversion
