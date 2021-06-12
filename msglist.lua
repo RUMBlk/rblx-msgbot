@@ -1,4 +1,4 @@
-msgversion = "2.0"
+msgversion = "2.0c"
 
 desc =
 {
@@ -32,9 +32,9 @@ msg =
     "May the funky be with you",
     "Stay Funky, but don't end up like Junko",
     "Nobody knows the reason of Junko's death, all that we know is that she was funky",
-    "\"roomia gaming\" - favourite sentence of Funky Rumia",
-    "Funk fo da (er)foo doe",
-    "If anyone had found players by the names of \"not_food\" or \"Melissandria666\", please tell them to come back to the tree (now a treehouse).",
+    "\"roomia gaming\" - sponsored by Funky Rumia",
+    "Funk for the erfoo doe",
+    "\"not_food\", \"Melissandria666\", please visit Funky Treehouse.",
     "Where were you when DangerCirno was stairs?"
 }
 test = false
