@@ -32,9 +32,9 @@ msg =
     "May the funky be with you",
     "Stay Funky, but don't end up like Junko",
     "Nobody knows the reason of Junko's death, all that we know is that she was funky",
-    "\"roomia gaming\" - sponsored by Funky Rumia",
+    "\"roomia gaming\" - sponsored by Rumia",
     "Funk for the erfoo doe",
-    "\"not_food\", \"Melissandria666\", please visit Funky Treehouse.",
+    "\"not_food\", \"Melissandria666\", please come back to Funky Treehouse.",
     "Where were you when DangerCirno was stairs?"
 }
 test = false
