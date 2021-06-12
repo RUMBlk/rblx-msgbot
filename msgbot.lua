@@ -19,7 +19,7 @@ if not msg then msg = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*MsgBot: Executed and turned on*", "All")
 
 function msgload()
-    loadstring(game:HttpGet(msglist))() end
+    loadstring(game:HttpGet(msglist))() forceupdate = false end
 
 game:GetService("Players").LocalPlayer.Chatted:Connect(function(chatmsg)
     if not end_of_world then
