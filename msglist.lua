@@ -1,9 +1,9 @@
-msgversion = "2.0c"
+msgversion = "2.0.2"
 
 desc =
 {
     "Go to #funkyquotes in our DS server to add your quotes and vote for others. Script was made by RUMBlk",
-    "Join \"funky!\" DS today! Search -> #funkyfumo in twitter for link!",
+    "Join \"funky!\" DS today! Use this link -> waa.ai/mbSt to join!",
 }
 msg = 
 {
@@ -32,7 +32,7 @@ msg =
     "May the funky be with you",
     "Stay Funky, but don't end up like Junko",
     "Nobody knows the reason of Junko's death, all that we know is that she was funky",
-    "\"roomia gaming\" - sponsored by Rumia",
+    "\"roomia gaming\" - sponsored by guess who",
     "Funk for the erfoo doe",
     "\"not_food\", \"Melissandria666\", please come back to Funky Treehouse.",
     "Where were you when DangerCirno was stairs?"
