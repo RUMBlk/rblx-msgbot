@@ -1,4 +1,4 @@
-msgversion = "2.1"
+msgversion = "removed"
 
 desc =
 {
