@@ -1,9 +1,8 @@
-msgversion = "2.0.3"
+msgversion = "2.1"
 
 desc =
 {
-    "Go to #funkyquotes in our DS server to add your quotes and vote for others. Script was made by RUMBlk",
-    "Join \"funky!\" DS today! Use this link -> waa.ai/mbSt to join!",
+    "Join \"funky!\" DS today! Use this link -> waa.ai/mbSt to join! Script was made by RUMBlk"
 }
 msg = 
 {
