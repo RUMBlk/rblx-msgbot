@@ -1,4 +1,4 @@
-msgversion = "2.0.2"
+msgversion = "2.0.3"
 
 desc =
 {
@@ -35,7 +35,8 @@ msg =
     "\"roomia gaming\" - sponsored by guess who",
     "Funk for the erfoo doe",
     "\"not_food\", \"Melissandria666\", please come back to Funky Treehouse.",
-    "Where were you when DangerCirno was stairs?"
+    "Where were you when DangerCirno was stairs?",
+    "The funky Angel watches over all of us"
 }
 test = false
 skip = false
