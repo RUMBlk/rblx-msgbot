@@ -1,5 +1,5 @@
 if not enabled then enabled = true end --for loop
-if not speed then speed = 30 end --in seconds
+if not speed then speed = 120 end --in seconds
 if not desc_speed then desc_speed = 10 end --in seconds
 if not iteration then iteration = 20 end --integer, in case if random == true 
 if not restart_time then restart_time = 10 end
