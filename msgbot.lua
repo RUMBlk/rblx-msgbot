@@ -6,6 +6,7 @@ if not restart_time then restart_time = 10 end
 if not update then update = true end --updates msglist after every iteration
 if not random then random = true end --randomize quotes
 if not msglist then update = false end
+if not quiet then quiet = false end
 
 if not desc then desc = {
     "Put your messages here",
@@ -17,7 +18,7 @@ if not msg then msg = {
     "Placeholder"
 } end
 
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*MsgBot: Executed and turned on*", "All")
+if quiet == false then game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*MsgBot: Executed and turned on*", "All") end
 
 function msgload()
     loadstring(game:HttpGet(msglist))() end
