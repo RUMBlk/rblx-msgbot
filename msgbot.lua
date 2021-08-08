@@ -1,5 +1,5 @@
 if not enabled then enabled = true end --for loop
-if not speed then speed = 120 end --in seconds
+if not speed then speed = 30 end --in seconds
 if not desc_speed then desc_speed = 10 end --in seconds
 if not iteration then iteration = 20 end --integer, in case if random == true 
 if not restart_time then restart_time = 10 end
@@ -8,9 +8,10 @@ if not random then random = true end --randomize quotes
 if not msglist then update = false end
 
 if not desc then desc = {
-    "Script was made by RUMBlk",
-    "Search on github \"rblx-msgbot\" for script"
+    "Put your messages here",
+    "Placeholder"
 } end
+
 if not msg then msg = {
     "Put your messages here",
     "Placeholder"
@@ -19,7 +20,7 @@ if not msg then msg = {
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*MsgBot: Executed and turned on*", "All")
 
 function msgload()
-    loadstring(game:HttpGet(msglist))() forceupdate = false end
+    loadstring(game:HttpGet(msglist))() end
 
 game:GetService("Players").LocalPlayer.Chatted:Connect(function(chatmsg)
     if not end_of_world then
@@ -49,7 +50,7 @@ repeat
             if #(msg) > iteration then items = iteration end
         end
         for i = 1, items do
-            if desc and i == 1 then
+            if desc and i == 1 and items >= 10 then
                 for i = 1, #(desc) do
                     game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(desc[i], "All")
                     wait(desc_speed)
